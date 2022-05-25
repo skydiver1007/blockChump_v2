@@ -19,7 +19,7 @@ const Navbar = (props: any) => {
 
     const twitterLink = `https://twitter.com/blockchumps`;
     const discordLink = `https://discord.gg/Zjh5Q8NYc9`;
-    // console.log("fullpageApi is: ", props.fullpageApi)
+    console.log("fullpageApi is: ", props.fullpageApi)
     return (
         <>
         {!isResponsive
