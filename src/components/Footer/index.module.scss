@@ -1,0 +1,63 @@
+.footer{
+    display: block;
+    background-color: #1e1825;//#FFE644;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index: 99;
+}
+
+.footer>img {
+    max-width: 100px;
+    max-height: 76px;
+}
+
+.footer_social_net{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer_twitter, .footer_discord {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.2;
+    // border-radius: 21px;
+    //background-color: #3c323e;
+    //margin-right: 19px;
+    //margin-left: 19px;
+    &:hover{
+        opacity: 0.6;
+        cursor: pointer;
+    }
+}
+
+.footer_twitter {
+    background-image: url('../../assets/images/twitter.png');
+}
+
+.footer_discord {
+    background-image: url('../../assets/images/discord.png');
+}
+
+.footer_copyright {
+    font-size: 16px;
+    line-height: 20px;
+    color: #575757;
+    font-family: "Bahnschrift";
+    // margin-top: 20px;
+}
+
+@media only screen and (max-width: 1099px) {
+    .footer>img {
+        max-width: 90px;
+        max-height: 90px;
+    } 
+}

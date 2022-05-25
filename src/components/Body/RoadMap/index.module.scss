@@ -1,0 +1,593 @@
+:root {
+    --rm1: url('../../../assets/images/roadmap/rm1.svg');
+    --rm2: url('../../../assets/images/roadmap/rm2.svg');
+    --rm3: url('../../../assets/images/roadmap/rm3.svg');
+    --rm4: url('../../../assets/images/roadmap/rm4.svg');
+    --rm5: url('../../../assets/images/roadmap/rm5.svg');
+    --rm6: url('../../../assets/images/roadmap/rm6.svg');
+    --rm7: url('../../../assets/images/roadmap/rm7.svg');
+    --rm8: url('../../../assets/images/roadmap/rm8.svg');
+    
+}
+
+.roadmap {
+    //background-color: #3c323e;
+    // opacity: 0.7;
+    display: block;
+    padding-top: 20px;
+    // align-items: center;
+    // text-align: center;
+    // z-index: 1;
+    height: 100vh;
+    max-height: 100vh;
+    
+}
+
+.roadmap_title {
+    font-size: 80px;
+    color: #0e7bff;
+    // font-family: "HesDeadJim";
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    // z-index: 99
+    justify-content: center;
+}
+
+.concept_creation_area {
+    display: block;
+}
+
+.box_row {
+    display: flex;
+    justify-content: center;
+}
+
+.concept_creation_box {
+    width: 400px;
+    height: 78px;
+    border-radius: 74px;
+    background-color: #54335a;
+    border: 5px solid #2bd369;
+    display: flex;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 22px;
+}
+
+.concept_creation_wheel {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    // background-color: #2bd369;
+    // border: 1px solid #707070;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+ 
+.concept_create_part {
+    display: block;
+    margin-left: 15px;
+}
+
+.concept_title {
+    font-size: 20px;
+    color: #0e7bff;
+    // font-family: "HesDeadJim";
+}
+.concept_content {
+    font-size: 20px;
+    line-height: 12px;
+    color: #ff7c6b;
+    font-family: "Bahnschrift";
+    margin-right: 5px;
+}
+
+.roadmap_bubble_text {
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.roadmap_bubble_number {
+    text-align: center;
+    padding: 5px;
+    font-size: 45px;
+    line-height: 45px;
+    color: #0e7bff;
+    //font-family: "Bahnschrift";
+}
+
+.roadmap_bubble_title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #770333;
+    //font-family: "Bahnschrift";
+}
+.roadmap_bubble_content {
+    
+    text-align: left;
+    font-size: 16px;
+    line-height: 16px;
+    color: #1d0042;
+    font-family: "Bahnschrift";
+    
+}
+@media only screen and (min-width: 1400px) {
+    .roadmap_title {
+        margin-bottom: 30px;
+    }
+    .concept_creation_area {
+        display: block;
+        height: 58vh;
+    }
+    /* Animated Circles CSS */
+
+    .circles {
+        position:absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        //width:100vw;
+        //height:100vh;
+        z-index: -1;
+        //clip-path: polygon(0px 0px, 0px 100%, 100% 100%, 100% 0px);
+        
+    }
+
+    .circles li {
+        position: absolute;
+        display: block;
+        overflow:hidden;
+        list-style: none;
+        width: 100vh;
+        height: 100vh;
+        background-image: var(--pink-gradient);
+        background-attachment: fill;
+        //background-position: top center;
+        animation: floating 25s linear infinite;
+        bottom: 0;//calc(-150px - 40vh);
+        animation-timing-function: ease;
+    }
+
+    .circles li:nth-child(1) {
+        background-image: var(--rm1);
+        background-repeat: no-repeat;
+        left: 7%;
+        top: 50%;
+        text-align: center;
+        //background-size: 100%;
+        width: 234px;
+        height: 202px;
+        animation-delay: 0s;
+        animation-duration: 25s;
+        
+        //border-radius: 50%;
+    }
+
+    .circles li:nth-child(2) {
+        background-image: var(--rm2);
+        background-repeat: no-repeat;
+        left: 11%;
+        top: 16%;
+        width: 335px;
+        height: 253px;
+        animation-delay: 0s;
+        animation-duration: 25s;
+        //border-radius: 50%;
+    }
+
+    .circles li:nth-child(3) {
+        background-image: var(--rm3);
+        background-repeat: no-repeat;
+        left: 24%;
+        top: 50%;
+        width: 445px;
+        height: 324px;
+        animation-delay: 0s;
+        animation-duration: 20s;
+        //border-radius: 50%;
+    }
+
+    .circles li:nth-child(4) {
+        background-image: var(--rm4);
+        background-repeat: no-repeat;
+        left: 33%;
+        top: 20%;
+        width: 240px;
+        height: 194px;
+        animation-delay: 0s;
+        animation-duration: 15s;
+        //border-radius: 50%;
+    }
+
+    .circles li:nth-child(5) {
+        background-image: var(--rm5);
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 17%;
+        width: 338px;
+        height: 335px;
+        animation-delay: 0s;
+        animation-duration: 15s;
+        //border-radius: 50%;
+        //background: var(--pink-gradient);
+    }
+
+    .circles li:nth-child(6) {
+        background-image: var(--rm6);
+        background-repeat: no-repeat;
+        left: 55%;
+        top: 65%;
+        width: 258px;
+        height: 221px;
+        animation-delay: 0s;
+        animation-duration: 20s;
+        //border-radius: 50%;
+    }
+
+    .circles li:nth-child(7) {
+        background-image: var(--rm7);
+        background-repeat: no-repeat;
+        left: 75%;
+        top: 20%;
+        width: 241px;
+        height: 193px;
+        animation-delay: 0s;
+        animation-duration: 15s;
+        //border-radius: 50%;
+        //background: var(--pink-gradient);
+    }
+
+    .circles li:nth-child(8) {
+        background-image: var(--rm8);
+        background-repeat: no-repeat;
+        left: 75%;
+        top: 50%;
+        width: 341px;
+        height: 268px;
+        animation-delay: 0s;
+        animation-duration: 35s;
+        //background: var(--pink-gradient);
+    }
+
+}
+
+@media only screen and (max-width: 1023px) {
+    .roadmap {
+        padding-right: 5px;
+        padding-left: 10px;
+        height: 100vh !important;
+        max-height: 100%;
+        display: flex;
+        // align-content: space-between;
+        flex-wrap: wrap;
+    }
+    .roadmap_title {
+        font-size: 42px;
+        color: #0e7bff;
+        // font-family: "HesDeadJim";
+        text-align: center;
+        margin-bottom: 15px;
+        margin: 0 auto;
+    }
+    .concept_creation_area {
+        width: 100%;
+    }
+    .circles {
+        // position:relative;
+        display: block;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        //width:100vw;
+        //height:100vh;
+        z-index: -1;
+        //clip-path: polygon(0px 0px, 0px 100%, 100% 100%, 100% 0px);
+        
+    }
+    
+    .circles li {
+        position: relative;
+        display: flex;
+        overflow:hidden;
+        list-style: none;
+        width: 100vh;
+        height: 100vh;
+        background-image: var(--pink-gradient);
+        background-attachment: fill;
+        //background-position: top center;
+        // animation: floating 25s linear infinite;
+        bottom: 0;//calc(-150px - 40vh);
+        // animation-timing-function: ease;
+    }
+
+    .circles li:nth-child(1), .list_1 {
+        background-image: var(--rm1);
+        background-repeat: no-repeat;
+        left: 5%;
+        top: 50%;
+        text-align: center;
+        width: 334px;
+        height: 327px;
+        background-size: 100%;
+    }
+    
+    .circles li:nth-child(2),  .list_2{
+        background-image: var(--rm2);
+        background-repeat: no-repeat;
+        left: 7%;
+        top: 16%;
+        width: 335px;
+        height: 253px;
+        // animation-delay: 0s;
+        // animation-duration: 25s;
+        //border-radius: 50%;
+    }
+    
+    .circles li:nth-child(3) {
+        background-image: var(--rm3);
+        background-repeat: no-repeat;
+        left: 7%;
+        top: 50%;
+        width: 445px;
+        height: 324px;
+        animation-delay: 0s;
+        animation-duration: 20s;
+        //border-radius: 50%;
+    }
+    
+    .circles li:nth-child(4) {
+        background-image: var(--rm4);
+        background-repeat: no-repeat;
+        left: 7%;
+        top: 20%;
+        width: 240px;
+        height: 194px;
+        animation-delay: 0s;
+        animation-duration: 15s;
+        //border-radius: 50%;
+    }
+    
+    .circles li:nth-child(5) {
+        background-image: var(--rm5);
+        background-repeat: no-repeat;
+        left: 7%;
+        top: 17%;
+        width: 338px;
+        height: 335px;
+        animation-delay: 0s;
+        animation-duration: 15s;
+        //border-radius: 50%;
+        //background: var(--pink-gradient);
+    }
+    
+    .circles li:nth-child(6) {
+        background-image: var(--rm6);
+        background-repeat: no-repeat;
+        left: 7%;
+        top: 65%;
+        width: 258px;
+        height: 221px;
+        animation-delay: 0s;
+        animation-duration: 20s;
+        //border-radius: 50%;
+    }
+    
+    .circles li:nth-child(7) {
+        background-image: var(--rm7);
+        background-repeat: no-repeat;
+        left: 7%;
+        top: 20%;
+        width: 241px;
+        height: 193px;
+        animation-delay: 0s;
+        animation-duration: 15s;
+        //border-radius: 50%;
+        //background: var(--pink-gradient);
+    }
+    
+    .circles li:nth-child(8) {
+        background-image: var(--rm8);
+        background-repeat: no-repeat;
+        left: 7%;
+        top: 50%;
+        width: 290px;
+        height: 268px;
+        animation-delay: 0s;
+        animation-duration: 35s;
+        //background: var(--pink-gradient);
+    }
+    
+
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+    .roadmap_title {
+        margin-bottom: 30px;
+    }
+    .concept_creation_area {
+        display: block;
+        height: 58vh;
+    }
+    .roadmap_bubble_text {
+        width: 64%;
+    }
+    .roadmap_bubble_number {
+        font-size: 35px;
+    }
+    .roadmap_bubble_content {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    /* Animated Circles CSS */
+
+    .circles {
+        position:absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        //width:100vw;
+        //height:100vh;
+        z-index: -1;
+        //clip-path: polygon(0px 0px, 0px 100%, 100% 100%, 100% 0px);
+        
+    }
+
+    .circles li {
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        list-style: none;
+        width: 100vh;
+        height: 100vh;
+        background-image: var(--pink-gradient);
+        background-attachment: fill;
+        //background-position: top center;
+        animation: floating 25s linear infinite;
+        bottom: 0;//calc(-150px - 40vh);
+        animation-timing-function: ease;
+    }
+
+    .circles li:nth-child(1) {
+        background-image: var(--rm1);
+        background-repeat: no-repeat;
+        left: 7%;
+        top: 50%;
+        text-align: center;
+        //background-size: 100%;
+        width: 234px;
+        height: 202px;
+        animation-delay: 0s;
+        animation-duration: 25s;
+        
+        //border-radius: 50%;
+    }
+
+    .circles li:nth-child(2) {
+        background-image: var(--rm2);
+        background-repeat: no-repeat;
+        left: 11%;
+        top: 13%;
+        width: 299px;
+        height: 205px;
+        background-size: 90%;
+        animation-delay: 0s;
+        animation-duration: 25s;
+        //border-radius: 50%;
+    }
+
+    .circles li:nth-child(3) {
+        background-image: var(--rm3);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        left: 27%;
+        top: 50%;
+        width: 395px;
+        height: 230px;
+        animation-delay: 0s;
+        animation-duration: 20s;
+        //border-radius: 50%;
+    }
+
+    .circles li:nth-child(4) {
+        background-image: var(--rm4);
+        background-repeat: no-repeat;
+        left: 33%;
+        top: 20%;
+        width: 240px;
+        height: 194px;
+        animation-delay: 0s;
+        animation-duration: 15s;
+        background-size: 80%;
+        //border-radius: 50%;
+    }
+
+    .circles li:nth-child(5) {
+        background-image: var(--rm5);
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 15%;
+        width: 338px;
+        height: 335px;
+        animation-delay: 0s;
+        animation-duration: 15s;
+        background-size: 80%;
+        //border-radius: 50%;
+        //background: var(--pink-gradient);
+    }
+
+    .circles li:nth-child(6) {
+        background-image: var(--rm6);
+        background-repeat: no-repeat;
+        left: 55%;
+        top: 60%;
+        background-size: 80%;
+        width: 258px;
+        height: 221px;
+        animation-delay: 0s;
+        animation-duration: 20s;
+        //border-radius: 50%;
+    }
+
+    .circles li:nth-child(7) {
+        background-image: var(--rm7);
+        background-repeat: no-repeat;
+        left: 75%;
+        top: 20%;
+        width: 241px;
+        height: 193px;
+        animation-delay: 0s;
+        animation-duration: 15s;
+        //border-radius: 50%;
+        //background: var(--pink-gradient);
+        padding-left: 20px;
+    }
+
+    .circles li:nth-child(8) {
+        background-image: var(--rm8);
+        background-repeat: no-repeat;
+        left: 75%;
+        top: 50%;
+        width: 341px;
+        height: 268px;
+        animation-delay: 0s;
+        animation-duration: 35s;
+        background-size: 80%;
+        //background: var(--pink-gradient);
+    }
+}
+
+
+
+
+
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 0.4;
+	}
+	50% {
+		transform: translateY(-120vh) rotate(360deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-240vh) rotate(720deg);
+		opacity: 1;
+	}
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 45px); }
+    100%   { transform: translate(0, -0px); }   
+}

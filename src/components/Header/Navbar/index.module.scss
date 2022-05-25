@@ -1,0 +1,150 @@
+.navbar {
+    height: 80px;
+    background-color: #FF4780;
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    // box-shadow: 0px 10px 0px #fb219950;
+    // position: sticky;
+    // top: 0px;
+    z-index: 1000;
+}
+ 
+.social_connect {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.social_connect_twitter {
+    width: 50px;
+    height: 50px;
+    // border-radius: 21px;
+    background-image: url('../../../assets/images/twitter.png');
+    background-size: 50px 50px;
+    border: none;
+    margin-right: 12px;
+    &:hover{cursor: pointer; mix-blend-mode: screen;}
+}
+
+.social_connect_discord {
+    width: 50px;
+    height: 50px;
+    // border-radius: 21px;
+    background-image: url('../../../assets/images/discord.png');
+    background-size: 50px 50px;
+    border: none;
+    &:hover{cursor: pointer; mix-blend-mode: screen;}
+}
+
+.active_mints {
+    display: block;
+    font-size: 42px;
+    color: #ffe644;
+    margin-left: 26px;
+    //margin-bottom: 7px;
+    cursor: pointer;
+    // width: 40%;
+    // max-width: 500px;
+}
+
+.active_mints:hover {
+    //filter: drop-shadow(0px 10px 0px rgba(24, 7, 121, 0.295));
+    //translate: 0px 10px;
+    color: #c6fcda;
+}
+
+.navlink_area {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    // max-width: 2000px;
+    // margin-left: 1000px;
+}
+
+.navbarLink {
+    font-size: 42px;
+    color: #3dff85;
+    // font-family: "HesDeadJim";
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.navbarLink:hover {
+    //filter: drop-shadow(0px 10px 0px rgba(24, 7, 121, 0.295));
+    //translate: 0px 10px;
+    color: #c6fcda;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        // display: none;
+        // overflow: scroll;
+        height: 50px;
+        border: none;
+    }
+    .social_connect {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .social_connect_twitter {
+        width: 30px;
+        height: 30px;
+        // border-radius: 21px;
+        //background-color: #ffe644 !important;
+        //border: 1px solid #707070;
+        margin-right: 12px;
+        background-size: 30px 30px;
+    }
+
+    .social_connect_discord {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+        // border-radius: 21px;
+        //background-color: #ffe644 !important;
+        //border: 1px solid #707070;
+    }
+
+    .navbarLink {
+        font-size: 20px;
+        color: #3dff85;
+        // font-family: "HesDeadJim";
+        // display: none;
+        margin-right: 30px;
+    }
+    .navlink_area {
+        text-align: left;
+        display: flex;
+        color:#ffe644;
+    }
+
+    .navMenu{
+        display: grid;
+        position: absolute;
+        height: 150px;
+        top: 48px;
+        left: 0px;
+        background-color: #FF4780;
+        align-items: center;
+        padding-left: 20px;
+        z-index: 999;
+    }
+    .active_mints {
+        display: block;
+        font-size: 30px;
+        color: #ffe644;
+        margin-left: 26px;
+        margin-top: 5px;
+        // margin-bottom: 7px;
+        // width: 40%;
+        // max-width: 500px;
+    }
+}

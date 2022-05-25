@@ -1,0 +1,239 @@
+:root {
+    --card-bg: none; //linear-gradient(rgba(255, 230, 68, 0.815), rgba(255, 230, 68, 0));
+    --card-border: none; // 5px solid #ff7c6b;
+    --pink-gradient: linear-gradient(rgb(248, 83, 124), rgb(211, 68, 140), rgb(211, 68, 140, 0));
+    --yellow-gradient: linear-gradient(rgb(248, 182, 83), rgb(245, 228, 75), rgba(250, 172, 83, 0));
+    --bg-pattern: url('../../../assets/images/web_pattern.gif');
+}
+
+.page_content {
+    background-color: #3c323e;
+
+    background-size: 100% 100%;
+    display: block;
+    //justify-content: space-evenly;
+    scroll-behavior:auto !important;
+    height: 100%;
+    min-height: 100vh;
+
+}
+
+.main_background {
+    //background-image: var(--bg-pattern);
+    
+    //mix-blend-mode: multiply;
+    background-repeat: repeat;
+    background-blend-mode:saturation;
+    opacity: 0.5;
+    background-size: 800px 400px;
+    height: 8000px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    max-height: 500vh;
+    z-index: -1;
+    background-color: #3c323e;//#FFE644;
+
+}
+
+.page_header {
+    padding-top: 7px;
+    padding-left: 15px;
+    display: flex;
+    background-color: #ff4680;
+    // box-shadow: 0px 10px 0px #fb219950;
+    z-index: 1000;
+
+}
+
+.page_header>img {
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.page_title {
+    font-size: 80px;
+    color: #3dff85;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page_subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Bahnschrift";
+    color:#ffe644;
+    text-align: center;
+    margin-top: 60px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    margin-bottom: 60px;
+    //margin-left: auto;
+    //margin-right: auto;
+}
+
+.content_area {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    //opacity: 0.1;
+
+    //background-color: #3c323e;//#FFE644;
+}
+
+.content_area_left {
+    width: 50vw;
+    padding: 20px;
+}
+
+.content_area_right {
+    width: 50vw;
+    padding: 20px;
+}
+
+.content_area_image {
+    position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+
+.content_iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.content_area_image>img{
+    margin-right: 20px;
+}
+
+
+.download_message {
+    font-size: 15px;
+    line-height: 20px;
+    color: #b99292;
+    font-family: "Bahnschrift";
+    // margin-top: 10px;
+    text-align: center;
+    margin-top:20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+// key_features page content
+.key_features {
+    //background-color: #3c323e;
+    display: block;
+    //padding-top: 46px;
+    max-width: 700px;
+}
+
+.key_features_title {
+    font-size: 30px;
+    color:#3dff85;
+    // font-family: "HesDeadJim";
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.feature_box {
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.feature_box_title {
+    font-size: 20px;
+    color: #0e7bff;
+    //justify-content: right;
+    // font-family: "HesDeadJim";
+}
+.feature_box_description {
+    font-size: 16px;
+    line-height: 20px;
+    color: #b99292;
+    font-family: "Bahnschrift";
+}
+
+
+
+@media only screen and (min-width: 1900px) {
+
+  
+}
+
+
+
+.btn_download_area {
+    padding-top: 60px;
+    //padding-bottom: 130px;
+    text-align: center;
+}
+
+.btn_download {
+    width: 261px;
+    height: 58px;
+    border-radius: 29px;
+    background-color: #3c323e;
+    border: 1px solid #2bd369;
+    &:hover 
+        {background-color: #6b596e;
+        border: 1px solid #94ffbb;
+        cursor: pointer;}
+}
+.btn_download_content {
+    font-size: 29px;
+    color: #2bd369; 
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .page_title {
+        margin-top: 60px;
+        font-size: 60px;
+    }
+    .content_area {
+        display: block;
+    }
+    .content_area_left {
+        width: 100%;
+    }
+    .content_area_right {
+        width: 100%;
+    }
+    .page_content {
+        height: 100%;
+        min-height: 100%;
+    }
+
+
+}
+
+@media only screen and (min-width: 1919px) {
+
+
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1534px) {
+   
+
+
+    
+}
+
+@media only screen and (min-width: 1535px) {
+
+}

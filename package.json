@@ -1,0 +1,57 @@
+{
+  "name": "blockchump",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "17": "^0.0.0",
+    "@fullpage/react-fullpage": "^0.1.23",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.27",
+    "@types/react": "^18.0.5",
+    "@types/react-dom": "^18.0.1",
+    "axios": "^0.26.1",
+    "file-saver": "^2.0.5",
+    "react": "^18.1.0",
+    "react-click-away-listener": "^2.2.1",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-scroll-into-view": "^1.12.0",
+    "react-use-scroll-snap": "^0.0.3",
+    "sass": "^1.50.1",
+    "swiper": "^8.1.4",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "https://api-mainnet.magiceden.io/rpc/getListedNFTsByQuery?q=%7B%22%24match%22%3A%7B%22collectionSymbol%22%3A%22block_chumps%22%7D%2C%22%24sort%22%3A%7B%22createdAt%22%3A-1%7D%2C%22%24skip%22%3A0%2C%22%24limit%22%3A20%2C%22status%22%3A%5B%5D%7D",
+  "devDependencies": {
+    "@types/file-saver": "^2.0.5"
+  }
+}

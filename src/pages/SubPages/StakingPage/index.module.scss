@@ -1,0 +1,402 @@
+:root {
+    --card-bg: none; //linear-gradient(rgba(255, 230, 68, 0.815), rgba(255, 230, 68, 0));
+    --card-border: none; // 5px solid #ff7c6b;
+}
+
+.page_content {
+    background-color: #3c323e;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    scroll-behavior:auto !important;
+    height: 100vh;
+    max-height: 100vh;
+
+}
+
+.main_background {
+    //background-image: var(--bg-pattern);
+    
+    //mix-blend-mode: multiply;
+    background-repeat: repeat;
+    background-blend-mode:saturation;
+    opacity: 0.5;
+    background-size: 800px 400px;
+    height: 8000px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    max-height: 500vh;
+    z-index: -1;
+    background-color: #3c323e;//#FFE644;
+
+}
+
+.page_header {
+    padding-top: 7px;
+    padding-left: 15px;
+    display: flex;
+    background-color: #ff4680;
+    // box-shadow: 0px 10px 0px #fb219950;
+    z-index: 1000;
+}
+
+.page_header>img {
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.page_title {
+    font-size: 80px;
+    color: #3dff85;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page_subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Bahnschrift";
+    color: #ff4680;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    //margin-left: auto;
+    //margin-right: auto;
+}
+
+.image_box_content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.box_container {
+    display: flex;
+    justify-content: center;
+    width: 1280px !important;
+}
+
+.image_box_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.image_box_area {
+    // margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding-top: 50px;
+}
+
+.image_box {
+    width: 320px;
+    height: 420px;
+    border-top-left-radius: 320px;
+    border-top-right-radius: 320px;
+    background-image: var(--card-bg);
+    border: var(--card-border);
+    display: block;
+    padding-top: 20px;
+    //margin-right: 50px;
+    // margin-left: 30px;
+    // margin-bottom: 66px;
+    z-index: 500;
+    cursor: pointer;
+    background-color: var(--card-bg);
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.image_box>img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 270px;
+}
+
+.image_box_title {
+    font-size: 35px;
+    color: #0e7bff;
+    font-weight: 400px;
+    // font-family: "HesDeadJim";
+    // margin-top: 21px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.image_box_content {
+    font-size: 15px;
+    line-height: 20px;
+    color: #b99292;
+    font-family: "Bahnschrift";
+    // margin-top: 10px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nextarrow {
+    display: block;
+    text-align: center;
+    padding-bottom: 36px;
+    margin-top: 20px;
+}
+.nextarrow img {
+    width: 50px;
+    margin-top: 50px;
+}
+
+// key_features page content
+.key_features {
+    background-color: #3c323e;
+    display: block;
+    padding-top: 46px;
+}
+
+.key_features_title {
+    font-size: 80px;
+    color: #0e7bff;
+    // font-family: "HesDeadJim";
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feature_image_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature_image_box_text {
+    width:40vw;
+    //margin-right: 0px;
+}
+
+.feature_image_box_text_title {
+    font-size: 60px;
+    color: #0e7bff;
+    //justify-content: right;
+    // font-family: "HesDeadJim";
+}
+.feature_image_box_text_description {
+    font-size: 30px;
+    line-height: 30px;
+    color: #ff7c6b;
+    font-family: "Bahnschrift";
+}
+
+.feature_image_box_image {
+    width:40vw;
+    margin: auto 20px;
+}
+.feature_image_box_image>img {
+    width:40vw;
+}
+
+
+
+@media only screen and (min-width: 1900px) {
+    .image_box {
+        width: 420px;
+        height: 600px;
+        border-top-left-radius: 420px;
+        border-top-right-radius: 420px;
+        background-image: var(--card-bg);
+        border: var(--card-border);
+        display: block;
+        padding-top: 20px;
+        margin-right: 50px;
+        // margin-left: 30px;
+        // margin-bottom: 66px;
+        z-index: 500;
+        cursor: pointer;
+        background-color: var(--card-bg);
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .image_box img {
+        border-radius: 50%;
+        width: 365px;
+        height: 365px;
+    }
+
+    .image_box_title {
+        font-size: 50px;
+        color: #0e7bff;
+        font-weight: 400px;
+        // font-family: "HesDeadJim";
+        // margin-top: 21px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .image_box_content {
+        font-size: 25px;
+        line-height: 30px;
+        color: #b99292;
+        font-family: "Bahnschrift";
+        // margin-top: 10px;
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+
+.btn_download_area {
+    padding-top: 100px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.btn_download {
+    width: 261px;
+    height: 58px;
+    border-radius: 29px;
+    background-color: #3c323e;
+    border: 1px solid #2bd369;
+}
+.btn_download_content {
+    font-size: 29px;
+    color: #2bd369; 
+}
+
+@media only screen and (max-width: 1024px) {
+    // key_features_part
+    .key_features {
+        padding-right: 5px;
+        padding-left: 10px;
+    }
+    .key_features_title {
+        font-size: 42px;
+        color: #0e7bff;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .btn_download_area {
+        padding-top: 0px;
+        padding-bottom: 50px;
+        // text-align: center;
+    }
+
+
+    // header_part
+    .page_content {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: block;
+        scroll-behavior:auto !important;
+        height: 100%;
+        max-height: 100%;
+    }
+    .page_header {
+        display: block;
+        text-align: center;
+    }
+    .page_header>img {
+        max-width: 80%;
+        max-height: 100px;
+        position: relative;
+        
+    }
+    .page_title {
+        font-size: 42px;
+    }
+
+    .page_subtitle {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .image_box_area {
+        display: block;
+        //margin-top: 30px;
+        height: 100%;
+        margin: auto;
+    }
+
+    .image_box {
+        //width: 75vw;
+        height: auto;
+        //padding-top: 20px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .image_box>img {
+        border-radius: 50%;
+        height: 240px;
+        width: 240px;
+
+    }
+    .image_box_title {
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .image_box_content {
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1919px) {
+
+
+.nextarrow {
+    display: block;
+    text-align: center;
+    padding-bottom: 36px;
+    margin-top: 80px;
+}
+
+
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1534px) {
+   
+
+
+    .nextarrow img {
+        width: 50px;
+        margin-left: 48%;
+        display: flex;
+        position: absolute;
+        bottom: 0px;
+        margin-right: 50%;
+    }
+    
+}
+
+@media only screen and (min-width: 1535px) {
+    .nextarrow img {
+        width: 50px;
+        margin-top: 0px;
+        display: flex;
+        position: absolute;
+        left: 48.5%;
+        top: 94vh;
+    }
+}

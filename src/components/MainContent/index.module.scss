@@ -1,0 +1,297 @@
+:root {
+    --pink-gradient: linear-gradient(rgb(248, 83, 124), rgb(211, 68, 140), rgb(211, 68, 140, 0));
+    --yellow-gradient: linear-gradient(rgb(248, 182, 83), rgb(245, 228, 75), rgba(250, 172, 83, 0));
+    --bg-pattern: url('../../assets/images/web_pattern.gif');
+  }
+
+.main_content {
+    background-color: #3c323e;//#FFE644;
+    //background-image: url('../../assets/images/pattern.png');
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    background-blend-mode: multiply;
+    position: absolute;
+    height: 6000px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    max-height: 400vh;
+    z-index: 0;
+    // z-index: -999;
+     //scroll-behavior: smooth;
+}
+.main_background {
+    background-image: var(--bg-pattern);
+    
+    //mix-blend-mode: multiply;
+    background-repeat: repeat;
+    background-blend-mode:saturation;
+    opacity: 0.65;
+    background-size: 800px 400px;
+    height: 8000px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    max-height: 500vh;
+    z-index: -1;
+    background-color: #3c323e;//#FFE644;
+
+}
+
+
+
+.scroll_container {
+    // height: 100vh;
+    // overflow-y: scroll;
+    // scroll-snap-type: y mandatory;
+}
+
+.section {
+    // height: 100vh;
+    // scroll-snap-align: center;
+}
+/*
+@media only screen and (max-width: 1024px) {
+    .main_background {
+        // background-image: url('../../assets/images/backgroundclouds.png');
+        background-size: 100%;
+        top: 51px;
+        height: 300px;
+    }
+}
+
+*/
+
+.cloud {
+    background-image: url('../../assets/images/cloud_1.svg');
+    background-repeat: no-repeat;
+    //display:flex;
+    position: absolute;
+	bottom: 0px;
+	left: 0;
+    background-position: bottom center;
+    background-size: 100vw auto;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+    clip-path: polygon(0px 0px, 0px 100%, 100% 100%, 100% 0px);
+}
+
+.cloud_2 {
+    background-image: url('../../assets/images/cloud_2.svg');
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    //display:flex;
+    position: absolute;
+    background-size: 90%;
+	top: 120vh;
+	right: 0;
+    background-position: bottom right;
+    //background-size: 100vw auto;
+	width: 660px;
+	height: 1900px;
+	z-index: -1;
+    //clip-path: polygon(0px 0px, 0px 100%, 100% 100%, 100% 0px);
+    @media only screen and (max-width: 1024px) {
+        width: 90vw;
+    }
+}
+
+.cloud_3 {
+    background-image: url('../../assets/images/cloud_2.svg');
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    //display:flex;
+    position: absolute;
+    background-size: 90%;
+	top: 300vh;
+	left: 0;
+    background-position: bottom right;
+    //background-size: 100vw auto;
+	width: 660px;
+	height: 1900px;
+    transform: scaleX(-1);
+	z-index: -1;
+    //clip-path: polygon(0px 0px, 0px 100%, 100% 100%, 100% 0px);
+    @media only screen and (max-width: 1024px) {
+        width: 90vw;
+    }
+}
+/* Animated Circles CSS */
+
+.circles {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+    clip-path: polygon(0px 0px, 0px 100%, 100% 100%, 100% 0px);
+    
+}
+
+.circles li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 200px;
+	height: 200px;
+	background-image: var(--pink-gradient);
+    background-attachment: fixed;
+    background-position: top center;
+	animation: floating 25s linear infinite;
+	bottom: 0;//calc(-150px - 40vh);
+    animation-timing-function: ease;
+}
+
+.circles li:nth-child(1) {
+	left: 38%;
+    top: 56%;
+	width: 800px;
+	height: 800px;
+	animation-delay: 0s;
+	animation-duration: 25s;
+	border-top-left-radius: 800px;
+    border-top-right-radius: 800px;
+}
+
+.circles li:nth-child(2) {
+	left: 10%;
+    top: 65%;
+	width: 300px;
+	height: 600px;
+	animation-delay: 0s;
+	animation-duration: 25s;
+	border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+}
+
+.circles li:nth-child(3) {
+	left: 20%;
+    top: 65%;
+	width: 460px;
+	height: 700px;
+	animation-delay: 0s;
+	animation-duration: 20s;
+	border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+}
+
+.circles li:nth-child(4) {
+	left: 30%;
+    top: 50%;
+	width: 500px;
+	height: 600px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+	border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+}
+
+.circles li:nth-child(5) {
+	left: 40%;
+    top: 80%;
+	width: 200px;
+	height: 800px;
+	animation-delay: 0s;
+	animation-duration: 20s;
+	border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    //background: var(--pink-gradient);
+}
+
+.circles li:nth-child(6) {
+    left: -60px;
+    top: 80%;
+	width: 500px;
+	height: 1000px;
+	animation-delay: 0s;
+	animation-duration: 25s;
+	border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+	//background: var(--pink-gradient);
+}
+
+.circles li:nth-child(7) {
+	left: 60%;
+    top: 40%;
+	width: 200px;
+	height: 800px;
+	animation-delay: 0s;
+	animation-duration: 30s;
+	border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    //background: var(--pink-gradient);
+}
+
+.circles li:nth-child(8) {
+	left: 70%;
+    top: 75%;
+	width: 260px;
+	height: 600px;
+	animation-delay: 0s;
+	animation-duration: 35s;
+	border-top-left-radius:260px;
+    border-top-right-radius: 260px;
+    //background: var(--pink-gradient);
+}
+
+.circles li:nth-child(9) {
+	left: 80%;
+    top: 70%;
+	width: 350px;
+	height: 350px;
+	animation-delay: 0s;
+	animation-duration: 40s;
+	border-top-left-radius: 350px;
+    border-top-right-radius: 350px;
+    //background: var(--pink-gradient);
+}
+
+.circles li:nth-child(10) {
+	left: 90%;
+    top: 80%;
+	width: 200px;
+	height: 200px;
+	animation-delay: 0s;
+	animation-duration: 45s;
+	border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    //background: var(--pink-gradient);
+}
+
+.circles li:nth-child(11) {
+    background-image: var(--yellow-gradient);
+	left: 10%;
+    top: 10%;
+	width: 200px;
+	height: 200px;
+    transform: rotate(120deg);
+	animation-delay: 0s;
+	animation-duration: 45s;
+	border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    //background: var(--pink-gradient);
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 0.4;
+	}
+	50% {
+		transform: translateY(-120vh) rotate(360deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-240vh) rotate(720deg);
+		opacity: 1;
+	}
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 45px); }
+    100%   { transform: translate(0, -0px); }   
+}

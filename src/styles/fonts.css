@@ -1,0 +1,39 @@
+@font-face {font-family:"He's Dead Jim";
+    src:url("./deadjim.eot?") format("eot"),url("./DEADJIM.woff") format("woff"),url("./DEADJIM.TTF") format("truetype"),url("./deadjim.svg#HesDeadJim") format("svg");font-weight:normal;font-style:normal;}
+
+
+@font-face {
+	font-family: 'Bahnschrift';
+	font-style: normal;
+	src: url('/public/assets/fonts/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF');
+}
+
+/* @font-face {
+	font-family: 'Arial';
+	font-style: normal;
+	src: url('./../assets/fonts/Arialn.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: 'Forward';
+	font-style:normal;
+	src: url('./../assets/fonts/FFFFORWA.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Quick';
+	font-style:normal;
+	src: url('./../assets/fonts/Quicksand-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	font-style: normal;
+	src: url('./../assets/fonts/Quicksand-Bold.ttf') format('truetype');
+} */
+
+/* @font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	src: url('/public/assets/font/Poppins/Poppins-Regular.ttf') format('truetype');
+} */
