@@ -54,7 +54,7 @@ const MainContent = () => {
             
             <ReactFullpage
               //fullpage options
-              licenseKey = {'YOUR_KEY_HERE'}
+              licenseKey = {'AZIKK-M84G6-KII0H-J72K6-BUJTM'}
               scrollingSpeed = {1000} /* Options here */
               render={({state, fullpageApi}) => {
                 return (<>

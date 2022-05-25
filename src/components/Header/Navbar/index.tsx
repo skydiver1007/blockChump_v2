@@ -19,6 +19,7 @@ const Navbar = (props: any) => {
 
     const twitterLink = `https://twitter.com/blockchumps`;
     const discordLink = `https://discord.gg/Zjh5Q8NYc9`;
+    // console.log("fullpageApi is: ", props.fullpageApi)
     return (
         <>
         {!isResponsive
@@ -33,7 +34,7 @@ const Navbar = (props: any) => {
 
             </div>
             <div className={styles.navlink_area}>
-                <a className={styles.navbarLink} onClick={() => props.fullpageApi.moveTo(2, 0)}>COLLECTIONS</a>
+                <a className={styles.navbarLink} onClick={() => props.fullpageApi.moveTo(2, 0)}>COLLECTIONS</a>                
                 <a className={styles.navbarLink} onClick={() => props.fullpageApi.moveTo(3, 0)}>ROADMAP</a>
                 <a className={styles.navbarLink} onClick={() => props.fullpageApi.moveTo(4, 0)}>UTILTIES</a>
                 <a className={styles.navbarLink} onClick={() => props.fullpageApi.moveTo(5, 0)}>ADOPT</a>
