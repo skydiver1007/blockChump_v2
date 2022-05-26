@@ -1,12 +1,12 @@
 import React, { useMemo, useEffect, useRef, useState } from "react";
 import styles from './index.module.scss';
-import AdoptChumpImg1 from './../../../assets/images/c1.gif';
-import AdoptChumpImg2 from './../../../assets/images/c2.gif';
-import AdoptChumpImg3 from './../../../assets/images/c3.gif';
-import AdoptChumpImg4 from './../../../assets/images/c4.gif';
-import AdoptChumpImg5 from './../../../assets/images/c5.gif';
-import AdoptChumpImg6 from './../../../assets/images/c3.gif';
-import AdoptChumpImg7 from './../../../assets/images/chump.gif';
+import AdoptChumpImg1 from './../../../assets/images/new1.gif';
+import AdoptChumpImg2 from './../../../assets/images/new2.gif';
+import AdoptChumpImg3 from './../../../assets/images/new3.gif';
+import AdoptChumpImg4 from './../../../assets/images/new4.gif';
+import AdoptChumpImg5 from './../../../assets/images/new5.gif';
+import AdoptChumpImg6 from './../../../assets/images/new6.gif';
+import AdoptChumpImg7 from './../../../assets/images/new7.gif';
 
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
