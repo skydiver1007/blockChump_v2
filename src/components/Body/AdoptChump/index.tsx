@@ -5,7 +5,7 @@ import AdoptChumpImg2 from './../../../assets/images/c2.gif';
 import AdoptChumpImg3 from './../../../assets/images/c3.gif';
 import AdoptChumpImg4 from './../../../assets/images/c4.gif';
 import AdoptChumpImg5 from './../../../assets/images/c5.gif';
-import AdoptChumpImg6 from './../../../assets/images/c2.gif';
+import AdoptChumpImg6 from './../../../assets/images/c3.gif';
 import AdoptChumpImg7 from './../../../assets/images/chump.gif';
 
 import axios from 'axios';
