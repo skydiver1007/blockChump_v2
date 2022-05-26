@@ -38,7 +38,7 @@ const Utilities = (props: any) => {
                                 </a>
                             </div>            
                             {/* <div className={styles.image_box1} onClick={() => navigate('chump')}> */}
-                            <div className={styles.image_box} onClick={() => navigate('chump')}>
+                            <div className={styles.image_box} onClick={() => navigate('staking')}>
                                 <a href="/staking">
                                     <img src={utilImage2}></img>
                                     <div className={styles.image_box_title}>

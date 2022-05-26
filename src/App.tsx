@@ -1,5 +1,5 @@
 import React from 'react';
-import {  BrowserRouter,  Routes,  Route} from "react-router-dom";
+import {  BrowserRouter,  Routes,  Route } from "react-router-dom";
 // css standards import
 import './styles/normalize.css';
 import './styles/fonts.css';
@@ -11,6 +11,7 @@ import OGChumpPage from './pages/SubPages/OGChumpPage';
 import PFPChumpPage from './pages/SubPages/PFPChumpPage';
 import ChumpNftEnginePage from './pages/SubPages/ChumpNftEnginePage';
 import StakingPage from './pages/SubPages/StakingPage';
+import DocsPage from './pages/SubPages/DocsPage';
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
             <Route path="/pfpchumps"  element={<PFPChumpPage />} />
             <Route path="/chumpnftengine" element={<ChumpNftEnginePage />} />
             <Route path="/staking" element={<StakingPage />} />
+            <Route path="/docs" element={<DocsPage />}/>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/*" element={<LandingPage />} />
             
           </Routes>  
         </BrowserRouter>

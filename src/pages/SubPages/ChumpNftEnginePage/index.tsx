@@ -127,9 +127,14 @@ const ChumpNftEnginePage = () => {
                             
                         </div>
                         <div className={styles.btn_download_area}>
-                            <a href="files\chump_nft_engine.zip" download>
+                            <a href="https://www.dropbox.com/s/m2ubx0jm2mj8jqj/chump_nft_engine.zip?dl=1" download>
                                 <button className={styles.btn_download}>
                                     <p className={styles.btn_download_content}>Download now</p>
+                                </button>
+                            </a>
+                            <a href="\docs">
+                                <button className={styles.btn_download}>
+                                    <p className={styles.btn_download_content}>Docs</p>
                                 </button>
                             </a>
                             <div className={styles.download_message}>
