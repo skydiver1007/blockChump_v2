@@ -19,7 +19,7 @@ const AdoptChump = () => {
     const [imgUrl, setImgUrl] = useState([]);
     const { isMobile } = useResize();
     const nfts = '';
-    const CORS_PROXY_API = `https://hades.ksanalex.workers.dev?u=`; 
+    const CORS_PROXY_API = `https://curly-block-8983.globalhunter7277743.workers.dev?u=`; 
     // Make a request for a user with a given ID
 
     useEffect(() => {
